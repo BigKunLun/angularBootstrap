@@ -1,0 +1,26 @@
+{
+  "name": "angularBootstrap",
+  "main": "angularBootstrap.js",
+  "version": "0.1.0",
+  "homepage": "https://github.com/BigKunLun/angularBootstrap",
+  "authors": [
+    "BigKunLun <306358910@qq.com>"
+  ],
+  "description": "A very simple AngularJS Lib used for dealyed start",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "angular",
+    "delyed",
+    "start"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
