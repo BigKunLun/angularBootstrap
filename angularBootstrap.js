@@ -2,10 +2,10 @@
   var $q;
 
   // 延迟启动Angular应用
-  function angularBootstrap (element, module) {
+  function angularBootstrap (module) {
     var deferred = $q.defer();
     angular.element(document).ready(function () {
-    angular.bootstrap(element, [module]);
+    angular.bootstrap(document, [module]);
       deferred.resolve(true);
     });
     return deferred.promise;
@@ -14,14 +14,13 @@
   // 启动
   function startBootstrap (opts) {
     var config = opts || {},
-        element = config.element,
         module = config.module,
         injector,
         promises = [],
         constants = [];
 
     // 使用注入器加载应用
-    injector = angular.injector(['ng'], angular.element(element));
+    injector = angular.injector(['ng'], angular.element(document));
     // 通过注入器加载$q服务
     $q = injector.get('$q');
 
@@ -52,7 +51,7 @@
         // 注册常量服务
         angular.module(moduleName).constant(constName, result);
       });
-      return angularBootstrap(element, module);
+      return angularBootstrap(module);
     }
 
     function failCallbacks (error) {
