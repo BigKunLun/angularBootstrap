@@ -1,12 +1,12 @@
 {
-  "name": "angular-start",
-  "main": "angularBootstrap.js",
+  "name": "angular-delay-start",
+  "main": "angularDelaystart.js",
   "version": "0.1.0",
-  "homepage": "https://github.com/BigKunLun/angularBootstrap",
+  "homepage": "https://github.com/BigKunLun/angularDelaystart",
   "authors": [
     "BigKunLun <306358910@qq.com>"
   ],
-  "description": "A very simple AngularJS Lib used for dealyed start",
+  "description": "A very simple AngularJS Lib used for delayed start",
   "keywords": [
     "angular",
     "delyed",

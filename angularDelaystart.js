@@ -67,7 +67,7 @@
     return $q.all(promises).then(doneCallbacks, failCallbacks);
   }
 
-  window.angularBootstrap = {
+  window.angularDelaystart = {
     startBootstrap: startBootstrap
   };
 })(window,document)
